@@ -1,7 +1,6 @@
 import React from 'react'
 import './Home.css'
 import {Typography, Grid, Button} from '@material-ui/core';
-import './Home.css';
 import { Box } from '@mui/material';
 
 function Home() {
@@ -17,7 +16,7 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
+                        <Button className="btn">Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
