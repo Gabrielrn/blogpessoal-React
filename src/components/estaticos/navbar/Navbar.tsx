@@ -15,7 +15,7 @@ function Navbar() {
                         </Typography>
                     </Box>
 
-                    <Box display="flex" justifyContent="start">
+                    <Box display="flex" justifyContent="flex-end">
                         <Box mx={1} style={{ cursor: "pointer" }} >
                             <Typography variant="h6" color="inherit">
                                 home

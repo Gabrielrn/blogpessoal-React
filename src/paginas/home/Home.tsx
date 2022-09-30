@@ -7,6 +7,7 @@ function Home() {
   return (
     //<> significa Fragment, é utlizado para retornar uma lista de elementos
     <>
+    {/* grid container pega toda a tela */}
       <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#3F51B5" }}>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
