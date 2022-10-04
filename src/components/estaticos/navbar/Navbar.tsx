@@ -22,28 +22,28 @@ function Navbar() {
                    <Box display="flex" justifyContent="flex-end">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                home
+                                Home
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                postagens
+                                Postagens
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit" >
-                                temas
+                                Temas
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                                Cadastrar tema
                             </Typography>
                         </Box>
                         <Link to='/login' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" color="inherit" >
-                                   <Button className='btn-logout' variant='contained'>logout</Button> 
+                                   <Button className='btn-logout' variant='contained'>Logout</Button> 
                                 </Typography>
                             </Box>
                         </Link>

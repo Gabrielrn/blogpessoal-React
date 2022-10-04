@@ -1,0 +1,46 @@
+.imagem-cadastro {
+  background-image: url(https://i.pinimg.com/736x/36/78/52/367852bf053a8b00496b966cd739785a.jpg);
+  background-repeat: no-repeat;
+  width: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.textos2 {
+  font-weight: bold !important;
+}
+
+.btn-cancelar {
+  margin-right: 100px !important;
+  background: linear-gradient(45deg, #4599a6 30%, #D7DEE2 100%) !important;
+  border: 0;
+  border-radius: 3;
+  color: rgb(0, 0, 0);
+  height: 6vh;
+  padding: 0 30px;
+}
+
+.btn-cancelar:hover {
+  background: linear-gradient(45deg, #a82f2f 30%, #585656 105%) !important;
+  border: 0 !important;
+  border-radius: 3 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn-cadastrar {
+  margin-right: 20px !important;
+  background: linear-gradient(45deg, #7a82c9 30%, #D7DEE2 100%) !important;
+  border: 0;
+  border-radius: 3;
+  color: rgb(0, 0, 0);
+  height: 6vh;
+  padding: 0 30px;
+}
+
+.btn-cadastrar:hover {
+  background: linear-gradient(45deg, #3F51B5 30%, #585656 105%) !important;
+  border: 0 !important;
+  border-radius: 3 !important;
+  color: rgb(0, 0, 0) !important;
+}
