@@ -8,7 +8,7 @@
 .redes {
   color: white;
   font-size: 60px !important;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .copyright {
@@ -17,3 +17,6 @@
   color: white;
 }
 
+.footer-color {
+  background: #919191 !important;
+}

@@ -9,8 +9,8 @@ function Footer() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
-                <Grid alignItems="center" item xs={12}>
-                    <Box className='box1'>
+                <Grid alignItems="center" item xs={12} >
+                    <Box className='box1 footer-color'>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h6" align="center">Siga-nos nas redes sociais </Typography>
                         </Box>
@@ -23,9 +23,9 @@ function Footer() {
                             </a>
                         </Box>
                     </Box>
-                    <Box className='copyright'>
+                    <Box className='copyright footer-color'>
                         <Box paddingTop={3}>
-                            <Typography variant="subtitle2" align="center" gutterBottom>© 2022 Copyright</Typography>
+                            <Typography variant="subtitle2" align="center" gutterBottom>© 2022 Copyright: Gabriel Rodrigues do Nascimento</Typography>
                         </Box>
                     </Box>
                 </Grid>

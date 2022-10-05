@@ -64,9 +64,10 @@ function CadastroUsuario() {
   return (
     <Grid container direction='row' justifyContent='center' alignItems='center'>
 
-      <Grid item xs={6} className='imagem-cadastro'></Grid>
-      <Grid item xs={6} alignItems='center'>
-        <Box paddingX={10}>
+      
+      <Grid container xs={12} className='imagem-cadastro' justifyContent='center'>
+        <Box paddingX={10} className='box2'> 
+          <div className="vidro">
         <form onSubmit={onSubmit}>
               <Typography
                 variant="h3"
@@ -79,6 +80,7 @@ function CadastroUsuario() {
                 Cadastre-se
               </Typography>
               <TextField
+                className='txt-style'
                 required
                 value={user.nome}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
@@ -88,32 +90,35 @@ function CadastroUsuario() {
                 name="nome"
                 margin="normal"
                 fullWidth
-                variant="outlined"
+                variant="filled"
               />
               <TextField
+                className='txt-style'
                 required
                 value={user.usuario}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id="usuario"
                 label="Usuário"
-                variant="outlined"
+                variant="filled"
                 name="usuario"
                 margin="normal"
                 placeholder="Entre com seu usuário"
                 fullWidth
               />
               <TextField
+                className='txt-style'
                 value={user.foto}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id="foto"
                 label="Foto"
-                variant="outlined"
+                variant="filled"
                 name="foto"
                 margin="normal"
                 placeholder="Inseria uma foto (URL)"
                 fullWidth
               />
               <TextField
+                className='txt-style'
                 required
                 value={user.senha}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
@@ -124,15 +129,16 @@ function CadastroUsuario() {
                 margin="normal"
                 fullWidth
                 type='password'
-                variant="outlined"
+                variant="filled"
               />
               <TextField
+                className='txt-style'
                 required
                 value={confirmarSenha}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
                 id="confirmarSenha"
                 label="Confirmar senha"
-                variant="outlined"
+                variant="filled"
                 name="confirmarSenha"
                 margin="normal"
                 type="password"
@@ -150,10 +156,11 @@ function CadastroUsuario() {
                   </Button>
                 </Box>
             </form>
+            </div>
         </Box>
+        </Grid>
+      
       </Grid>
-
-    </Grid>
   )
 }
 

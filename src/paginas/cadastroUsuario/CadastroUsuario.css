@@ -1,5 +1,5 @@
 .imagem-cadastro {
-  background-image: url(https://i.pinimg.com/736x/36/78/52/367852bf053a8b00496b966cd739785a.jpg);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ec1464-d899-400a-b608-c48c76b500d2/d7zu9b9-ffcd1709-2866-4c2f-b4a1-836ea43a4401.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ5ZWMxNDY0LWQ4OTktNDAwYS1iNjA4LWM0OGM3NmI1MDBkMlwvZDd6dTliOS1mZmNkMTcwOS0yODY2LTRjMmYtYjRhMS04MzZlYTQzYTQ0MDEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.K4wDEwZoTctsmc-kqw-Jkuu_vfjK0iTn84iMpzHxBQ0);
   background-repeat: no-repeat;
   width: 100vh;
   min-height: 100vh;
@@ -9,6 +9,14 @@
 
 .textos2 {
   font-weight: bold !important;
+}
+
+.box2 {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .btn-cancelar {

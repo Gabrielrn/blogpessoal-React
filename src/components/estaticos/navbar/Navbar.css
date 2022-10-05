@@ -7,12 +7,21 @@
   text-decoration: none;
 }
 
+.btn-logout {
+  background: #6b6a6a !important;
+}
+
 .btn-logout:hover {
-  color: black;
-  background: red !important;
+  color: white;
+  background:  #414141 !important;
 }
 
 .bold-navbar {
   color: white;
   font-weight: bold;
 }
+
+.navbar-cor {
+  background: #919191;
+}
+

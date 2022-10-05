@@ -84,14 +84,14 @@ function Login() {
                 name="usuario"
                 margin="normal"
                 fullWidth
-                variant="outlined"
+                variant="filled"
               />
               <TextField className='txt-style'
                 value={userLogin.senha}
                 onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)}
                 id="senha"
                 label="Senha"
-                variant="outlined"
+                variant="filled"
                 name="senha"
                 margin="normal"
                 type="password"
