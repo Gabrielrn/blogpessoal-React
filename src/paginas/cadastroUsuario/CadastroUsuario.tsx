@@ -28,13 +28,6 @@ function CadastroUsuario() {
           foto: ''
       })
 
-  useEffect(() => {
-      if (userResult.id != 0) {
-          navigate("/login")
-      }
-  }, [userResult])
-
-
   function confirmarSenhaHandle(e: ChangeEvent<HTMLInputElement>){
       setConfirmarSenha(e.target.value)
   }
@@ -50,13 +43,23 @@ function CadastroUsuario() {
   }
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
       e.preventDefault()
-      if(confirmarSenha == user.senha){
-      cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-      alert('Usuario cadastrado com sucesso')
+      if(confirmarSenha === user.senha && user.senha.length >= 8){
+        try {
+          await cadastroUsuario('usuarios/cadastrar', user, setUserResult);
+          alert('Usuário criado com sucesso. Efetue seu login, por favor.');
+        } catch (error) {
+          alert('Falha ao cadastrar o usuário. Por favor, confira os campos');
+        }
       }else{
           alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
       }
   }
+
+  useEffect(() => {
+    if (userResult.id != 0) {
+        navigate("/login")
+    }
+}, [userResult])
 
   return (
     <Grid container direction='row' justifyContent='center' alignItems='center'>
@@ -76,6 +79,7 @@ function CadastroUsuario() {
                 Cadastre-se
               </Typography>
               <TextField
+                required
                 value={user.nome}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id="nome"
@@ -87,6 +91,7 @@ function CadastroUsuario() {
                 variant="outlined"
               />
               <TextField
+                required
                 value={user.usuario}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id="usuario"
@@ -98,6 +103,18 @@ function CadastroUsuario() {
                 fullWidth
               />
               <TextField
+                value={user.foto}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                id="foto"
+                label="Foto"
+                variant="outlined"
+                name="foto"
+                margin="normal"
+                placeholder="Inseria uma foto (URL)"
+                fullWidth
+              />
+              <TextField
+                required
                 value={user.senha}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 id="senha"
@@ -110,6 +127,7 @@ function CadastroUsuario() {
                 variant="outlined"
               />
               <TextField
+                required
                 value={confirmarSenha}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
                 id="confirmarSenha"

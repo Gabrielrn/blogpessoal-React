@@ -10,11 +10,13 @@ function Navbar() {
   return (
     <>
       <AppBar position="static">
-                <Toolbar variant="dense">
+                <Toolbar variant="dense"  className="navbar-cor">
                     <Box className='cursor'>
+                    <Link to='/home' className='textos bold-navbar'>
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
                         </Typography>
+                    </Link>    
                     </Box>
                     
                     {/* A Grid em volta da Box permite a utlização do espaço inteiro disponível e joga os itens para a direita */}

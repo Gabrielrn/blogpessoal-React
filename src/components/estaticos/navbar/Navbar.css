@@ -11,3 +11,8 @@
   color: black;
   background: red !important;
 }
+
+.bold-navbar {
+  color: white;
+  font-weight: bold;
+}

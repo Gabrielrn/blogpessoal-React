@@ -6,6 +6,7 @@ import useLocalStorage from 'react-use-localstorage';
 import { login } from "../../services/Service";
 import UserLogin from "../../models/UserLogin";
 import { Box } from "@mui/material";
+import blueGrey from '@material-ui/core/colors/blueGrey'
 
 function Login() {
 
@@ -50,14 +51,19 @@ function Login() {
 
   return (
     <>
-      <Grid
+      <Grid className='bg-login'
         container
         direction="row"
         justifyContent="center"
         alignItems="center"
       >
-        <Grid xs={6} alignItems="center">
-          <Box paddingX={20}>
+        <Grid xs={6} alignItems="center" >
+          
+
+        </Grid>
+        <Grid xs={12} className='imagem-login'>
+        <Box paddingX={50} className='box'>
+        <div className="vidro">
             <form onSubmit={onSubmit}>
               <Typography
                 variant="h3"
@@ -69,7 +75,7 @@ function Login() {
               >
                 Entrar
               </Typography>
-              <TextField
+              <TextField className='txt-style'
                 value={userLogin.usuario}
                 onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)}
                 id="usuario"
@@ -80,7 +86,7 @@ function Login() {
                 fullWidth
                 variant="outlined"
               />
-              <TextField
+              <TextField className='txt-style'
                 value={userLogin.senha}
                 onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)}
                 id="senha"
@@ -106,17 +112,14 @@ function Login() {
                   Não tem uma conta?
                 </Typography>
               </Box>
-              <Link to='/cadastrousuario'>
-                  <Typography variant='subtitle1' gutterBottom align='center' className='textos'>
+              <Link to='/cadastrousuario'  className='textos'>
+                  <Typography variant='subtitle1' gutterBottom align='center' className='bold'>
                       Cadastre-se
                   </Typography>
               </Link>
             </Box>
+          </div>
           </Box>
-
-        </Grid>
-        <Grid xs={6} className='imagem-login'>
-
         </Grid>
       </Grid>
     </>
