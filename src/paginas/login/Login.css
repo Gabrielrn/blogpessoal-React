@@ -70,3 +70,7 @@ backdrop-filter: blur(2.8px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 padding: 1rem;
 }
+
+::placeholder {
+  color: black !important;
+}
