@@ -3,16 +3,21 @@
   color: white;
 }
 
+.cursor:hover {
+  color: #E73F3F !important;
+}
+
 .text-decorator-none {
   text-decoration: none;
 }
 
 .btn-logout {
   background: #6b6a6a !important;
+  padding-top: 10px !important;
 }
 
 .btn-logout:hover {
-  color: white;
+  color: #E73F3F;
   background:  #414141 !important;
 }
 
