@@ -11,6 +11,10 @@
   margin-top: 10px;
 }
 
+.redes:hover {
+  color: #BDC3C7 !important;
+}
+
 .copyright {
   background-color: #303F9F; 
   height: 60px;

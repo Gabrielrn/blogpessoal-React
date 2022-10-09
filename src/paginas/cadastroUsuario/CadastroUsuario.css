@@ -20,39 +20,46 @@
 }
 
 .btn-cancelar {
-  margin-right: 100px !important;
-  background: linear-gradient(45deg, #4599a6 30%, #D7DEE2 100%) !important;
-  border: 0;
-  border-radius: 3;
-  color: rgb(0, 0, 0);
-  height: 6vh;
-  padding: 0 30px;
-  font-weight: bold !important;
-  padding-top: 10px !important;
+    background: linear-gradient(45deg, #bdc3c7 80%, black 100%) !important;
+    border: 0 !important;
+    border-radius: 3 !important;
+    box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.3) !important;
+    color: rgb(0, 0, 0) !important;
+    height: 6vh !important;
+    padding: 0 30px !important;
+    font-weight: bold !important;
+    padding-top: 4px !important;
+    margin-right: 20vh !important;
 }
 
 .btn-cancelar:hover {
-  background: linear-gradient(45deg, #a82f2f 30%, #585656 105%) !important;
-  border: 0 !important;
-  border-radius: 3 !important;
-  color: rgb(0, 0, 0) !important;
+    background: linear-gradient(45deg, #E73F3F 80%, #000000 105%) !important;
+    border: 0 !important;
+    border-radius: 3 !important;
+    box-shadow: 0 8px 20px 5px rgba(0, 0, 0, 0.3) !important;
+    color: rgb(0, 0, 0) !important;
+    height: 6vh !important;
+    padding: 0 30px !important;
 }
 
 .btn-cadastrar {
-  margin-right: 20px !important;
-  background: linear-gradient(45deg, #7a82c9 30%, #D7DEE2 100%) !important;
-  border: 0;
-  border-radius: 3;
-  color: rgb(0, 0, 0);
-  height: 6vh;
-  padding: 0 30px;
-  font-weight: bold !important;
-  padding-top: 10px !important;
+  background: linear-gradient(45deg, #bdc3c7 80%, black 100%) !important;
+    border: 0 !important;
+    border-radius: 3 !important;
+    box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.3) !important;
+    color: rgb(0, 0, 0) !important;
+    height: 6vh !important;
+    padding: 0 30px !important;
+    font-weight: bold !important;
+    padding-top: 4px !important;
 }
 
 .btn-cadastrar:hover {
-  background: linear-gradient(45deg, #3F51B5 30%, #585656 105%) !important;
-  border: 0 !important;
-  border-radius: 3 !important;
-  color: rgb(0, 0, 0) !important;
+    background: linear-gradient(45deg, #6b6a6a 80%, #000000 105%) !important;
+    border: 0 !important;
+    border-radius: 3 !important;
+    box-shadow: 0 8px 20px 5px rgba(0, 0, 0, 0.3) !important;
+    color: rgb(0, 0, 0) !important;
+    height: 6vh !important;
+    padding: 0 30px !important;
 }

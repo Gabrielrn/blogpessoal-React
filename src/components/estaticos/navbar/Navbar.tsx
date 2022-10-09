@@ -26,7 +26,7 @@ function Navbar() {
                     <Box className='cursor'>
                     <Link to='/home' className='textos bold-navbar'>
                         <Typography variant="h5" color="inherit">
-                            <img className='img-logo' src="https://cdn.pixabay.com/photo/2020/07/07/08/49/wolf-5379713_960_720.png" alt="" />
+                            <img className='img-logo' src="https://i.pinimg.com/originals/7b/0c/e0/7b0ce0e9e5938afc0b3fb4e0ea64e6c0.png" alt="" />
                         </Typography>
                     </Link>    
                     </Box>
