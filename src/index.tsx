@@ -6,12 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import WebFont from 'webfontloader';
 
 
-// WebFont.load({
-//   google: {
-//     families: ['Thewitcher-jnOj']
-//   }
-// });
-
 ReactDOM.render(
 <React.StrictMode>
 <App />
