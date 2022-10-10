@@ -23,7 +23,7 @@ function Navbar() {
     <>
       <AppBar position="static">
                 <Toolbar variant="dense"  className="navbar-cor">
-                    <Box className='cursor'>
+                    <Box className='cursor' alignItems='center'>
                     <Link to='/home' className='textos bold-navbar'>
                         <Typography variant="h5" color="inherit">
                             <img className='img-logo' src="https://i.pinimg.com/originals/7b/0c/e0/7b0ce0e9e5938afc0b3fb4e0ea64e6c0.png" alt="" />
@@ -33,7 +33,7 @@ function Navbar() {
                     
                     {/* A Grid em volta da Box permite a utlização do espaço inteiro disponível e joga os itens para a direita */}
                    <Grid container justifyContent="flex-end">
-                   <Box display="flex" justifyContent="flex-end">
+                   <Box display="flex" justifyContent="flex-end" alignItems='center'>
                     <Link to='/home' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">

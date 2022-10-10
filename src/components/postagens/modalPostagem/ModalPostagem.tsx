@@ -59,7 +59,7 @@ function ModalPostagem () {
   return (
     <div>
       <Button
-        className="btnModal"
+        className="btn-modal"
         onClick={handleOpen}>Nova Postagem</Button>
       <Modal
         open={open}

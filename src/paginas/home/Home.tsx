@@ -31,7 +31,7 @@ function Home() {
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui as suas frustações como um bruxo!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1} className='btn-modal'>
+                        <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
                         <Button className="btn">Ver Postagens</Button>

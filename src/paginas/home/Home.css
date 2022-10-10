@@ -38,6 +38,7 @@
     height: 6vh !important;
     padding: 0 30px !important;
     font-weight: bold !important;
+    padding-top: 4px !important;
 }
 
 .btn-modal:hover {
