@@ -8,3 +8,13 @@
   -webkit-box-shadow: 5px 2px 2px 5px #4C4B4B;
   -moz-box-shadow: 20px 2px 2px 5px rgba(0,0,0,0.62);
 }
+
+.btn-lista {
+  background: #BDC2C7 !important;
+  color: black;
+}
+
+.btn-lista-deletar {
+  color: black !important;
+  background-color: #950400 !important;
+}

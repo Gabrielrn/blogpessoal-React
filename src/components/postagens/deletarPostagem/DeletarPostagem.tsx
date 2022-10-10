@@ -69,12 +69,12 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Button onClick={sim} variant="contained" className="marginLeft btn-lista" size='large'>
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button onClick={nao} variant="contained" size='large' color="secondary">
+              <Button onClick={nao} variant="contained" size='large' color="secondary" className='corTxt'>
                 Não
               </Button>
               </Box>
