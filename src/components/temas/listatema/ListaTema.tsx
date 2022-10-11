@@ -4,8 +4,9 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import { Box } from '@mui/material';
 import './ListaTema.css';
 import Tema from '../../../models/Tema';
-import useLocalStorage from 'react-use-localstorage';
 import { busca } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function ListaTema() {
 
@@ -15,8 +16,9 @@ function ListaTema() {
   // estado para gerenciar os temas que virão do backend
   const [temas, setTemas] = useState<Tema[]>([])
 
-   // trazer o token do navegador para dentro do blog
-   const [token, setToken] = useLocalStorage('token');
+   const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+);
 
    //verificar se a pessoa tem token, se não tiver, mandar pra login
    useEffect(() => {

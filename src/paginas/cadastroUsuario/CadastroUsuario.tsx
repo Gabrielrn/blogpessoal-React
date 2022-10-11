@@ -32,6 +32,14 @@ function CadastroUsuario() {
       setConfirmarSenha(e.target.value)
   }
 
+  // linha 35 e 38 - previnindo que a pessoa não faça o cadastro faltando informação
+  const [cadastro, setCadastro] = useState(false)
+
+  useEffect(() => {
+    if(user.nome.length > 3 && user.usuario !== '' && user.senha.length >= 8) {
+      setCadastro(true)
+    }
+  })
 
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
 
@@ -151,7 +159,7 @@ function CadastroUsuario() {
                         Cancelar
                     </Button>
                   </Link>
-                  <Button type='submit' variant='contained' className="btn-cadastrar">
+                  <Button type='submit' variant='contained' className="btn-cadastrar" disabled={!cadastro}>
                         Cadastrar
                   </Button>
                 </Box>
