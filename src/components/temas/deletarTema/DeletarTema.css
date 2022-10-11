@@ -15,3 +15,7 @@
   background: #950400 !important;
   margin-left: 59px !important;
 }
+
+.corTxt-tema:hover {
+  color: white !important;
+}
