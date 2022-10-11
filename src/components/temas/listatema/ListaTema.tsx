@@ -7,6 +7,7 @@ import Tema from '../../../models/Tema';
 import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
 
@@ -23,7 +24,16 @@ function ListaTema() {
    //verificar se a pessoa tem token, se não tiver, mandar pra login
    useEffect(() => {
     if (token === '') {
-      alert('Realize o Login para ter acesso a função Temas!')
+      toast.error('Realize o login para ter acesso a função temas!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: 'dark',
+        progress: undefined,
+    });
       navigate('/login')
     }
   }, [token])

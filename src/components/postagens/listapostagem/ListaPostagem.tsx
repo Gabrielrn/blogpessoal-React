@@ -7,6 +7,7 @@ import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
 
 
 function ListaPostagem() {
@@ -24,7 +25,16 @@ function ListaPostagem() {
    //verificar se a pessoa tem token, se não tiver, mandar pra login
    useEffect(() => {
     if (token === '') {
-      alert('Realize o Login para ter acesso a função Temas!')
+      toast.error('Você precisa estar logado para acessar a função Temas!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: 'dark',
+        progress: undefined,
+    });
       navigate('/login')
     }
   }, [token])
@@ -46,19 +56,19 @@ function ListaPostagem() {
     {
       posts.map(post => (
       <Box m={2} className='card'>
-        <Card variant="outlined" className="card">
+        <Card variant="outlined">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Postagens
+            </Typography>
+            <Typography variant="body2" component="p" className='margin'>
+              {post.tema?.descricao}
             </Typography>
             <Typography variant="h5" component="h2">
               {post.titulo}
             </Typography>
             <Typography variant="body2" component="p">
               {post.texto}
-            </Typography>
-            <Typography variant="body2" component="p">
-              {post.tema?.descricao}
             </Typography>
           </CardContent>
           <CardActions>

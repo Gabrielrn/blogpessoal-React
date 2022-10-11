@@ -7,6 +7,7 @@ import { Box } from '@mui/material';
 import { buscaId, deleteId } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
 
 
 function DeletarTema() {
@@ -20,7 +21,16 @@ function DeletarTema() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado!")
+          toast.error('Você precisa estar logado!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: 'dark',
+            progress: undefined,
+        });
             navigate("/login")
     
         }
@@ -47,7 +57,16 @@ function DeletarTema() {
                 'Authorization': token
               }
             });
-            alert('Tema deletado com sucesso!');
+            toast.success('Tema deletado com sucesso!', {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: 'dark',
+              progress: undefined,
+          });
           }
         
           function nao() {
@@ -57,7 +76,7 @@ function DeletarTema() {
   return (
     <>
       <Box m={2}>
-        <Card variant="outlined">
+        <Card variant="outlined" className='card-deletar'>
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
@@ -76,7 +95,7 @@ function DeletarTema() {
                 </Button>
               </Box>
               <Box mx={2}>
-                <Button onClick={nao} variant="contained" size='large' color="secondary" className='btn-lista-deletar'>
+                <Button onClick={nao} variant="contained" size='large' color="secondary" className='corTxt-tema'>
                   Não
                 </Button>
               </Box>
