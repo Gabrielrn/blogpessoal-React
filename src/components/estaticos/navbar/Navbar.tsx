@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { addToken } from "../../../store/tokens/actions";
 import { toast } from 'react-toastify';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 function Navbar() {
     
@@ -80,8 +81,8 @@ function Navbar() {
             </Link>
             <Link to='/perfil' className='text-decorator-none'>
                 <Box mx={1} className='cursor'>
-                    <Typography variant="h6" color="inherit">
-                        Perfil
+                    <Typography variant="h6" color="inherit" className='perfil-icon'>
+                        <AccountCircleIcon className="perfil-icon"/>
                     </Typography>
                 </Box>
             </Link>

@@ -3,6 +3,10 @@
   color: white;
 }
 
+.perfil-icon {
+  height: 2rem !important;
+}
+
 .cursor:hover {
   color: #950400 !important;
 }
