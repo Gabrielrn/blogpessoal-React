@@ -5,3 +5,10 @@ export const addToken = (token: string): Action => ({
   type: "ADD_TOKEN",
   payload: token,
 });
+
+//pega o id do usuário na hora do login
+
+export const addId = (id: string): Action => ({
+  type: "ADD_ID",
+  payload: id
+})

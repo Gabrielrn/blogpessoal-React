@@ -54,7 +54,13 @@ function ListaPostagem() {
   return (
     <>
     {
+      // posts === [] ? (
+      //   <p>loader</p>
+      // ): (
+
+      
       posts.map(post => (
+     
       <Box m={2} className='card'>
         <Card variant="outlined">
           <CardContent>
@@ -69,6 +75,9 @@ function ListaPostagem() {
             </Typography>
             <Typography variant="body2" component="p">
               {post.texto}
+            </Typography>
+            <Typography variant='body2' component='p'>
+              Postado por: {post.usuario?.nome}
             </Typography>
           </CardContent>
           <CardActions>
@@ -93,6 +102,7 @@ function ListaPostagem() {
         </Card>
       </Box> 
       ))
+      // )
     }
     </>)
 }

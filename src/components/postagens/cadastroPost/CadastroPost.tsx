@@ -8,6 +8,7 @@ import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import User from '../../../models/User';
 
 function CadastroPost() {
     
@@ -45,13 +46,29 @@ function CadastroPost() {
         titulo: '',
         texto: '',
         data:  '',
-        tema: null
+        tema: null,
+        usuario: null,
+    })
+
+    //Busca o ID dentro do REDUX
+    const userId = useSelector<TokenState, TokenState['id']>(
+        (state) => state.id
+    )
+
+    //State que vai controlar o usuário que sera inserado na postagem
+    const [usuario, setUsuario] = useState<User>({
+        id: +userId,
+        nome: '',
+        usuario: '',
+        senha: '',
+        foto: '',
     })
 
     useEffect(() => { 
         setPostagem({
             ...postagem,
-            tema: tema
+            tema: tema,
+            usuario: usuario // adiciona o usuário dentro da postagem que está sendo enviada para o back end
         })
     }, [tema])
 
