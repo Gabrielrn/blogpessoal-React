@@ -1,5 +1,7 @@
 <p align="center"><img src="http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge"/></p>
 
+📁 Acesso ao projeto: https://kaer-morhen.netlify.app
+<hr>
 <br>
 Projeto feito com o intuito de ser uma rede social. Qualquer pessoa que realizar o cadastro, poderá realizar postagens sobre o tema que quiser, e também pode visualizar as mesmas na home da página como também na página de perfil.
 
